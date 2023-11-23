@@ -24,7 +24,7 @@ Escolha uma opção:
 
 // adicionar tarefa
 function addTask(task) {
-    let incrementId = tasks.length + 1;
+    let incrementId = tasks.length;
 
     if (task != undefined || task != null) {
         tasks.push({ id: incrementId, description: task });
@@ -49,7 +49,7 @@ function editTask(taskId) {
 
         tasks[taskId].description = newDescription;
     } else {
-        throw new Error("Id informado não foi encontrado");
+        console.log("Id informado não foi encontrado!");
     }
 }
 
@@ -97,7 +97,9 @@ function userInput(userSelect) {
                 console.log("Lista de tarefas:");
 
                 tasks.forEach((task) => {
-                    return console.log(`${task.id} - ${task.description}`);
+                    return console.log(
+                        `Id: ${task.id} - Descrição: ${task.description}`
+                    );
                 });
 
                 menu();
