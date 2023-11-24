@@ -50,5 +50,5 @@ O projeto foi desenvolvido em grupo por:
 
 -   [Matheus Gabriel Nogueira](https://github.com/eomgn)
 -   [Gabriella Freitas](https://github.com/GabriellaFsena)
--   [Karisma](https://github.com/karismasousa)
+-   [Karisma Sousa](https://github.com/karismasousa)
 -   [Lucas de Grande da Silva](https://github.com/eomgn)
