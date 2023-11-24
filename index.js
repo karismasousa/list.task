@@ -33,10 +33,20 @@ function addTask(task) {
     }
 }
 
+// listar tarefas
+function listTask() {
+    tasks.forEach((task) => {
+        return console.log(`Id: ${task.id} - Descrição: ${task.description}`);
+    });
+}
+
 // remover tarefa
 function removeTask(taskId) {
     if (captureTaskById(taskId) != -1) {
         tasks.splice(taskId, 1);
+
+        console.log("Tarefa excluída com sucesso!\nLista de tarefa(s): ");
+        listTask();
     } else {
         throw new Error("Id informado não foi encontrado");
     }
@@ -48,6 +58,9 @@ function editTask(taskId) {
         let newDescription = input("Escreva a nova descrição: ");
 
         tasks[taskId].description = newDescription;
+
+        console.log("Tarefa editada com sucesso!\nLista de tarefa(s): ");
+        listTask();
     } else {
         console.log("Id informado não foi encontrado!");
     }
@@ -96,11 +109,7 @@ function userInput(userSelect) {
             case "2":
                 console.log("Lista de tarefas:");
 
-                tasks.forEach((task) => {
-                    return console.log(
-                        `Id: ${task.id} - Descrição: ${task.description}`
-                    );
-                });
+                listTask();
 
                 menu();
                 break;
