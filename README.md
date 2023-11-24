@@ -34,7 +34,8 @@ node index.js
 ```
 
 ```
-3. Após o comando acima você vai observar na sua IDE que o projeto inicou pois irá aparecer um menu para gerenciar suas tarefas.
+3. Após o comando acima você vai observar na sua IDE que o projeto inicou pois irá
+aparecer um menu para gerenciar suas tarefas.
 ```
 
 ```
